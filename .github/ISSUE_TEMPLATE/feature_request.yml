@@ -1,0 +1,52 @@
+name: Feature Request
+description: Suggest a capability or workflow for LEGO Builder for Blender.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature requests should describe the user workflow first. Implementation details can come later.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or workflow
+      description: What should a user be able to do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed capability
+      description: Describe the desired behavior without requiring a specific implementation.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Capability area
+      options:
+        - Foundation
+        - LDraw Integration
+        - Library Management
+        - Part Browser
+        - Materials
+        - Snapping Engine
+        - Build Tools
+        - Scene Optimisation
+        - Rendering
+        - Export
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional alternatives or related tools.
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Link relevant roadmap, product, or architecture notes if applicable.
