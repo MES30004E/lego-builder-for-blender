@@ -1,0 +1,47 @@
+"""Central Blender class registration for LEGO Builder for Blender."""
+
+from __future__ import annotations
+
+import bpy
+
+from .preferences import LEGOBuilderPreferences
+from .ui.panels import LEGO_BUILDER_PT_main_panel
+
+CLASSES = (
+    LEGOBuilderPreferences,
+    LEGO_BUILDER_PT_main_panel,
+)
+
+_registered_classes: list[type] = []
+
+
+def register() -> None:
+    """Register all Blender classes in dependency order."""
+    registered_this_call: list[type] = []
+
+    try:
+        for cls in CLASSES:
+            bpy.utils.register_class(cls)
+            _registered_classes.append(cls)
+            registered_this_call.append(cls)
+    except Exception:
+        for cls in reversed(registered_this_call):
+            _unregister_class_safely(cls)
+            if cls in _registered_classes:
+                _registered_classes.remove(cls)
+        raise
+
+
+def unregister() -> None:
+    """Unregister Blender classes in reverse registration order."""
+    while _registered_classes:
+        cls = _registered_classes.pop()
+        _unregister_class_safely(cls)
+
+
+def _unregister_class_safely(cls: type) -> None:
+    """Unregister a Blender class, tolerating development reload state."""
+    try:
+        bpy.utils.unregister_class(cls)
+    except (RuntimeError, ValueError):
+        return

@@ -1,13 +1,13 @@
 schema_version = "1.0.0"
 
 id = "lego_builder_for_blender"
-version = "0.1.0"
+version = "0.2.0"
 name = "LEGO Builder for Blender"
 tagline = "Build LEGO models natively inside Blender"
-maintainer = "LEGO Builder for Blender contributors"
+maintainer = "MES30004E"
 type = "add-on"
 
-website = "https://github.com/lego-builder-for-blender/lego-builder-for-blender"
+website = "https://github.com/MES30004E/lego-builder-for-blender"
 tags = ["3D View", "Modeling"]
 blender_version_min = "5.1.0"
 license = ["SPDX:MIT"]

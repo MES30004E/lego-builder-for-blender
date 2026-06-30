@@ -4,8 +4,8 @@ This is a capability-based roadmap. It is not a detailed implementation plan.
 
 ## Current Roadmap Status
 
-`v0.1.0` established the extension skeleton. The next work should strengthen
-structure and prepare for LDraw-related features.
+`v0.1.0` established the extension skeleton. `v0.2.0` begins the architecture
+and preferences foundation for future LDraw-related features.
 
 ## Foundation
 
@@ -13,6 +13,7 @@ Expected milestone: `v0.2`
 
 - Establish package structure.
 - Add preferences foundation.
+- Add basic LDraw library path validation.
 - Add basic verification workflow.
 - Keep documentation current.
 

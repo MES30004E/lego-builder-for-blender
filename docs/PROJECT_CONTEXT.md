@@ -8,12 +8,12 @@ describes the current state of LEGO Builder for Blender.
 Version 0.1.0 is complete. The extension installs and loads in Blender 5.1.2
 with a minimal sidebar panel.
 
-No LEGO building features are implemented yet.
+The v0.2.0 architecture and preferences foundation is in progress. LEGO
+building features are still not implemented.
 
 ## Current Milestone
 
-The project is preparing the documentation and architecture foundation for
-future feature work.
+`v0.2.0: Architecture Refactor & Preferences`
 
 ## Completed Milestones
 
@@ -24,15 +24,17 @@ future feature work.
 
 ## Current Architecture Summary
 
-The current extension has a single Blender entry point. Future modules are
-described in [ARCHITECTURE.md](ARCHITECTURE.md) but should not be created until
-real behavior needs them.
+The extension now uses a small modular structure with a minimal entry point,
+central registration, add-on preferences, UI panels, pure LDraw path validation,
+and utility helpers.
 
 ## Current Priorities
 
 - Keep the project installable in Blender 5.1+.
-- Preserve a clean documentation foundation.
-- Introduce feature modules gradually.
+- Keep the LEGO sidebar tab working.
+- Preserve modular registration and safe unregister behavior.
+- Provide an optional LDraw library path preference.
+- Keep basic LDraw path validation pure Python and free of `bpy`.
 - Avoid claiming support for unimplemented LEGO workflows.
 
 ## Current Constraints
@@ -75,7 +77,8 @@ Then inspect the current worktree before making changes.
 
 ## Never Assume
 
-- Do not assume LDraw integration exists.
+- Do not assume LDraw importing exists.
+- Do not assume basic path validation means full LDraw validation.
 - Do not assume parts, materials, snapping, caching, export, or build tools work.
 - Do not assume a planned module exists until it appears in the repository.
 - Do not assume Blender is available in the shell.

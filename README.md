@@ -11,7 +11,7 @@ animation, and rendering capabilities.
 
 ## Current Status
 
-Version 0.1.0 is a verified project skeleton.
+Version 0.2.0 is a verified architecture and preferences foundation.
 
 The extension currently provides a minimal Blender sidebar panel. LEGO building
 features such as LDraw integration, searchable parts, snapping, materials,

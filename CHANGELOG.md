@@ -7,8 +7,12 @@ and this project follows semantic versioning.
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-06-30
+
 ### Added
 
+- v0.2.0 architecture foundation with modular registration, add-on preferences,
+  LDraw library path setting, basic path validation, and sidebar status display.
 - Documentation foundation for project context, vision, product scope, roadmap,
   architecture, data model, engineering standards, development workflow,
   glossary, ADR process, and contributor guidance.

@@ -1,9 +1,9 @@
 [project]
 name = "lego-builder-for-blender"
-version = "0.1.0"
+version = "0.2.0"
 description = "A Blender-native LEGO building environment."
 authors = [
-    { name = "LEGO Builder for Blender contributors", email = "placeholder@example.com" },
+    { name = "MES30004E", email = "115165550+MES30004E@users.noreply.github.com" },
 ]
 readme = "README.md"
 license = "MIT"
