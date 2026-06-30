@@ -12,6 +12,10 @@ and this project follows semantic versioning.
 - Documentation foundation for project context, vision, product scope, roadmap,
   architecture, data model, engineering standards, development workflow,
   glossary, ADR process, and contributor guidance.
+- GitHub issue templates for bugs, feature requests, architecture decisions,
+  and performance reports.
+- Pull request template.
+- Basic CI workflow for Python syntax, Ruff, Black, and TOML checks.
 
 ## [0.1.0] - 2026-06-30
 

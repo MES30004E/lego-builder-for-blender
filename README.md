@@ -36,6 +36,13 @@ During early development, install the extension zip in Blender 5.1+ using
 - [Architecture Decisions](docs/adr/README.md): ADR process.
 - [Changelog](CHANGELOG.md): release history.
 
+## Development Checks
+
+Pull requests should pass the basic CI workflow in
+[.github/workflows/ci.yml](.github/workflows/ci.yml). The workflow checks Python
+syntax, Ruff, Black formatting, and project TOML parsing without requiring
+Blender to be installed.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) before proposing changes.
