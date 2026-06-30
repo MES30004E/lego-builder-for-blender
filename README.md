@@ -1,35 +1,45 @@
 # LEGO Builder for Blender
 
-LEGO Builder for Blender is an open-source Blender add-on for creating a
-Blender-native LEGO building environment.
+LEGO Builder for Blender is an open-source Blender 5.1+ extension for building
+LEGO models natively inside Blender.
 
-## Vision
+## What It Is
 
-The long-term goal is to build a LEGO creation workflow inspired by BrickLink
-Studio while taking full advantage of Blender's modeling, animation, and
-rendering capabilities. This project is intended to become more than an
-importer: it should support building, organizing, inspecting, and presenting
-LEGO models directly inside Blender.
+The project aims to become a Blender-native LEGO building environment inspired
+by dedicated LEGO design tools while taking advantage of Blender's modeling,
+animation, and rendering capabilities.
 
 ## Current Status
 
-Version 0.1: project skeleton.
+Version 0.1.0 is a verified project skeleton.
 
-This initial version provides only the foundation for the add-on. No LEGO
-building functionality has been implemented yet.
+The extension currently provides a minimal Blender sidebar panel. LEGO building
+features such as LDraw integration, searchable parts, snapping, materials,
+caching, and export are not implemented yet.
 
 ## Installation
 
-This repository currently contains a minimal Blender add-on skeleton. During
-early development, install it by placing the project folder in Blender's add-ons
-directory or by packaging the folder as an extension zip once release packaging
-is configured.
+During early development, install the extension zip in Blender 5.1+ using
+`Edit > Preferences > Extensions > Install from Disk`.
 
-## Development Roadmap
+## Documentation
 
-Roadmap items will be added as the project architecture and feature priorities
-take shape.
+- [Project Context](docs/PROJECT_CONTEXT.md): current state and AI onboarding.
+- [Vision](docs/VISION.md): why the project exists.
+- [Product](docs/PRODUCT.md): what the product should become.
+- [Roadmap](docs/ROADMAP.md): capability-based project direction.
+- [Architecture](docs/ARCHITECTURE.md): high-level system design.
+- [Data Model](docs/DATA_MODEL.md): conceptual data flow and ownership.
+- [Engineering](docs/ENGINEERING.md): coding and quality standards.
+- [Development Workflow](docs/DEVELOPMENT_WORKFLOW.md): feature and release flow.
+- [Glossary](docs/GLOSSARY.md): canonical project terminology.
+- [Architecture Decisions](docs/adr/README.md): ADR process.
+- [Changelog](CHANGELOG.md): release history.
 
-## Architecture
+## Contributing
 
-Early architecture notes are tracked in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) before proposing changes.
+
+## License
+
+LEGO Builder for Blender is licensed under the [MIT License](LICENSE).
