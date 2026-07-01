@@ -51,6 +51,12 @@ pure LDraw metadata/index helpers, one indexing operator, and utility helpers.
 - Python 3.11+ is the target Python version.
 - The project should remain suitable for Blender Extensions distribution.
 - Changes should be small, reviewable, and documented.
+- Blender add-on preferences may be reset when uninstalling or reinstalling the
+  extension.
+- Future durable project data should live in a user-selected LEGO Builder
+  workspace rather than only in Blender add-on preferences.
+- A future workspace manager should own LDraw library download/setup and cache
+  folder management.
 
 ## Supported Runtime
 
@@ -88,8 +94,8 @@ Then inspect the current worktree before making changes.
 - Do not assume LDraw importing exists.
 - Do not assume basic path validation means full LDraw validation.
 - Do not assume the in-memory part index represents geometry.
-- Do not assume v0.4 library management, downloads, updates, or multiple
-  library locations exist.
+- Do not assume v0.4 library management, workspace creation, downloads, updates,
+  or multiple library locations exist.
 - Do not assume v0.5 visual asset browsing, thumbnails, search, or drag-and-drop
   exist.
 - Do not assume v0.6 geometry import, mesh generation, material generation, or

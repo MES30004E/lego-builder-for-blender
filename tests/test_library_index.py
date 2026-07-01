@@ -4,8 +4,12 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from library.index import build_ldraw_part_index, clear_current_index
-from library.index import get_current_index, set_current_index
+from library.index import (
+    build_ldraw_part_index,
+    clear_current_index,
+    get_current_index,
+    set_current_index,
+)
 from library.metadata import extract_part_metadata
 
 

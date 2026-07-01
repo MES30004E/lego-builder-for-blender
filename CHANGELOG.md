@@ -7,6 +7,18 @@ and this project follows semantic versioning.
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-07-02
+
+### Added
+
+- Compact sidebar access to LEGO Builder add-on preferences.
+- Documentation note for add-on preference persistence and future workspace
+  management.
+
+### Fixed
+
+- Test import organization for Ruff CI compatibility.
+
 ## [0.3.0] - 2026-07-01
 
 ### Added

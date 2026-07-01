@@ -11,7 +11,8 @@ animation, and rendering capabilities.
 
 ## Current Status
 
-Version 0.3.0 is a verified LDraw library index foundation.
+Version 0.3.1 is a verified LDraw library index foundation with preferences UX
+and CI compatibility fixes.
 
 The extension currently provides a Blender sidebar panel, add-on preferences,
 basic LDraw library path validation, and an in-memory `.dat` part metadata

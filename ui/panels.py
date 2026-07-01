@@ -22,7 +22,13 @@ class LEGO_BUILDER_PT_main_panel(Panel):
     def draw(self, context: bpy.types.Context) -> None:
         """Draw the panel contents."""
         layout = self.layout
-        layout.label(text="LEGO Builder is working!")
+        header = layout.row(align=True)
+        header.label(text="LEGO Builder is working!")
+        header.operator(
+            "lego_builder.open_preferences",
+            text="",
+            icon="PREFERENCES",
+        )
 
         preferences = get_preferences(context)
         path = preferences.ldraw_library_path if preferences else None
