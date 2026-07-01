@@ -7,7 +7,7 @@ from . import registration as _registration
 bl_info = {
     "name": "LEGO Builder for Blender",
     "author": "MES30004E",
-    "version": (0, 2, 0),
+    "version": (0, 3, 0),
     "blender": (5, 1, 0),
     "location": "View3D > Sidebar > LEGO",
     "description": "A Blender-native LEGO building environment.",

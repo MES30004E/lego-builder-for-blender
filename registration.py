@@ -5,10 +5,12 @@ from __future__ import annotations
 import bpy
 
 from .preferences import LEGOBuilderPreferences
+from .operators.index_library import LEGO_BUILDER_OT_build_part_index
 from .ui.panels import LEGO_BUILDER_PT_main_panel
 
 CLASSES = (
     LEGOBuilderPreferences,
+    LEGO_BUILDER_OT_build_part_index,
     LEGO_BUILDER_PT_main_panel,
 )
 

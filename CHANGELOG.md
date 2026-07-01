@@ -7,6 +7,13 @@ and this project follows semantic versioning.
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-01
+
+### Added
+
+- v0.3.0 LDraw library index foundation with pure metadata extraction,
+  in-memory part indexing, a refresh operator, and sidebar index status.
+
 ## [0.2.0] - 2026-06-30
 
 ### Added

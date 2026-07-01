@@ -5,19 +5,24 @@ describes the current state of LEGO Builder for Blender.
 
 ## Current Project Status
 
-Version 0.1.0 is complete. The extension installs and loads in Blender 5.1.2
-with a minimal sidebar panel.
+Version 0.3.0 is complete. The extension installs and loads in Blender 5.1.2
+with modular registration, add-on preferences, LDraw path validation, and an
+in-memory LDraw part metadata index.
 
-The v0.2.0 architecture and preferences foundation is in progress. LEGO
-building features are still not implemented.
+Geometry import, caching, search, thumbnails, materials, snapping, and export
+are still not implemented.
 
 ## Current Milestone
 
-`v0.2.0: Architecture Refactor & Preferences`
+`v0.4.0: Library Management`
 
 ## Completed Milestones
 
 - `v0.1.0`: initial Blender Extension skeleton.
+- `v0.2.0`: architecture refactor, add-on preferences, LDraw library path
+  setting, and basic path validation.
+- `v0.3.0`: pure LDraw metadata extraction, in-memory part indexing, refresh
+  operator, and sidebar index status.
 - Extension manifest.
 - Minimal `LEGO` sidebar tab and `LEGO Builder` panel.
 - Project README, license, build configuration, and changelog.
@@ -26,7 +31,7 @@ building features are still not implemented.
 
 The extension now uses a small modular structure with a minimal entry point,
 central registration, add-on preferences, UI panels, pure LDraw path validation,
-and utility helpers.
+pure LDraw metadata/index helpers, one indexing operator, and utility helpers.
 
 ## Current Priorities
 
@@ -35,6 +40,9 @@ and utility helpers.
 - Preserve modular registration and safe unregister behavior.
 - Provide an optional LDraw library path preference.
 - Keep basic LDraw path validation pure Python and free of `bpy`.
+- Plan a managed LDraw library experience.
+- Preserve pure Python validation, metadata extraction, and index building.
+- Store the part index in memory only until persistent indexing is designed.
 - Avoid claiming support for unimplemented LEGO workflows.
 
 ## Current Constraints
@@ -79,6 +87,13 @@ Then inspect the current worktree before making changes.
 
 - Do not assume LDraw importing exists.
 - Do not assume basic path validation means full LDraw validation.
+- Do not assume the in-memory part index represents geometry.
+- Do not assume v0.4 library management, downloads, updates, or multiple
+  library locations exist.
+- Do not assume v0.5 visual asset browsing, thumbnails, search, or drag-and-drop
+  exist.
+- Do not assume v0.6 geometry import, mesh generation, material generation, or
+  primitive substitution exists.
 - Do not assume parts, materials, snapping, caching, export, or build tools work.
 - Do not assume a planned module exists until it appears in the repository.
 - Do not assume Blender is available in the shell.

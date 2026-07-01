@@ -8,6 +8,10 @@ storage formats, or algorithms.
 ```text
 LDraw Part
     ↓
+Part Metadata
+    ↓
+Part Index
+    ↓
 Cached Blend Asset
     ↓
 Placed Instance
@@ -21,6 +25,20 @@ Scene
 
 An LDraw Part is a source definition from an external LDraw-compatible library.
 It is library data, not Blender scene data.
+
+## Part Metadata
+
+Part Metadata is basic catalog information extracted from a `.dat` file, such
+as part number, filename, display name, and library-relative path.
+
+It does not include geometry.
+
+## Part Index
+
+A Part Index is an in-memory collection of Part Metadata records for the
+configured LDraw library.
+
+It is runtime data only in the current milestone and is not written to disk.
 
 ## Cached Blend Asset
 
@@ -48,6 +66,8 @@ collections, and user edits.
 ## Ownership and Lifecycle
 
 - LDraw Parts come from an external library.
+- Part Metadata is derived from LDraw Part files.
+- The Part Index is in-memory runtime data.
 - Cached Blend Assets are generated and may be refreshed.
 - Placed Instances belong to a Blender scene.
 - Connector Graph data belongs to building logic.

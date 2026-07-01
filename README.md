@@ -11,11 +11,12 @@ animation, and rendering capabilities.
 
 ## Current Status
 
-Version 0.2.0 is a verified architecture and preferences foundation.
+Version 0.3.0 is a verified LDraw library index foundation.
 
-The extension currently provides a minimal Blender sidebar panel. LEGO building
-features such as LDraw integration, searchable parts, snapping, materials,
-caching, and export are not implemented yet.
+The extension currently provides a Blender sidebar panel, add-on preferences,
+basic LDraw library path validation, and an in-memory `.dat` part metadata
+index. LEGO building features such as geometry import, searchable asset
+browsing, snapping, materials, caching, and export are not implemented yet.
 
 ## Installation
 
