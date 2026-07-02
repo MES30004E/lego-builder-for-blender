@@ -27,6 +27,9 @@ During early development, install the extension zip in Blender 5.1+ using
 
 ## Documentation
 
+- [Help Centre](https://mes30004e.github.io/lego-builder-for-blender/):
+  user guide for installation, LEGO Library setup, LDraw setup, and
+  troubleshooting.
 - [Project Context](docs/PROJECT_CONTEXT.md): current state and AI onboarding.
 - [Vision](docs/VISION.md): why the project exists.
 - [Product](docs/PRODUCT.md): what the product should become.

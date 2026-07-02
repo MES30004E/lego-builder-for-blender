@@ -7,7 +7,8 @@ This is a capability-based roadmap. It is not a detailed implementation plan.
 `v0.1.0` established the extension skeleton. `v0.2.0` added architecture and
 preferences. `v0.3.0` added the pure LDraw library index foundation. The
 long-term UX goal is a dedicated LEGO Builder workspace-like environment inside
-Blender, with the sidebar preserved for quick controls and status.
+Blender, with the sidebar preserved for quick controls and status. `v0.4.2`
+adds a hosted Help Centre foundation for user-facing setup and troubleshooting.
 
 ## Foundation
 
@@ -55,6 +56,24 @@ Future library-management work:
 - Provide download/update flows only if Blender extension constraints allow it.
 
 Manual LDraw library download/setup is not implemented in `v0.4.0`.
+
+## User Documentation
+
+Expected milestone: `v0.4.2`
+
+- Publish a hosted Help Centre using GitHub Pages.
+- Keep setup, LEGO Library, LDraw, indexing, troubleshooting, and FAQ guidance
+  focused on users.
+- Keep contributor and long-term project-memory documentation in repository
+  docs.
+- Point the sidebar help button at the hosted Help Centre.
+
+Future documentation work:
+
+- Add screenshots after UI flows stabilize.
+- Expand troubleshooting based on real user reports.
+- Document future release download flows only after GitHub Releases are used.
+- Document update checking only if it is implemented later.
 
 ## Part Browser
 

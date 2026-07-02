@@ -1,0 +1,28 @@
+site_name: LEGO Builder for Blender Help Centre
+site_description: User guide for the LEGO Builder for Blender extension.
+site_url: https://mes30004e.github.io/lego-builder-for-blender/
+repo_name: MES30004E/lego-builder-for-blender
+repo_url: https://github.com/MES30004E/lego-builder-for-blender
+docs_dir: help
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Installation: installation.md
+  - LEGO Library Setup: lego-library-setup.md
+  - LDraw Setup: ldraw-setup.md
+  - Refreshing and Indexing Parts: refreshing-indexing-parts.md
+  - Troubleshooting: troubleshooting.md
+  - FAQ: faq.md
+  - Future Brick Builder: future-brick-builder.md
+  - Future Part Browser: future-part-browser.md
+  - Developer Notes: developer-notes.md

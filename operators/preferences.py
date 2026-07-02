@@ -8,7 +8,7 @@ from bpy.types import Operator
 from ..preferences import ADDON_PACKAGE
 
 PROJECT_URL = "https://github.com/MES30004E/lego-builder-for-blender"
-DOCUMENTATION_URL = PROJECT_URL
+DOCUMENTATION_URL = "https://mes30004e.github.io/lego-builder-for-blender/"
 
 
 class LEGO_BUILDER_OT_open_preferences(Operator):

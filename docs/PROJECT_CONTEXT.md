@@ -5,16 +5,16 @@ describes the current state of LEGO Builder for Blender.
 
 ## Current Project Status
 
-Version 0.3.0 is complete. The extension installs and loads in Blender 5.1.2
-with modular registration, add-on preferences, LDraw path validation, and an
-in-memory LDraw part metadata index.
+Version 0.4.1 is complete. The extension installs and loads in Blender 5.1.2
+with modular registration, add-on preferences, LEGO Library management, LDraw
+path validation, and an in-memory LDraw part metadata index.
 
 Geometry import, caching, search, thumbnails, materials, snapping, and export
 are still not implemented.
 
 ## Current Milestone
 
-`v0.4.0: Library Management`
+`v0.4.2: Help Centre Foundation`
 
 ## Completed Milestones
 
@@ -23,6 +23,7 @@ are still not implemented.
   setting, and basic path validation.
 - `v0.3.0`: pure LDraw metadata extraction, in-memory part indexing, refresh
   operator, and sidebar index status.
+- `v0.4.1`: LEGO Library management foundation and polished setup UX.
 - Extension manifest.
 - Minimal `LEGO` sidebar tab and `LEGO Builder` panel.
 - Project README, license, build configuration, and changelog.
@@ -47,6 +48,9 @@ runtime state, Blender operators, and utility helpers.
 - Preserve pure Python validation, metadata extraction, and index building.
 - Store the part index in memory only until persistent indexing is designed.
 - Keep runtime state in memory only.
+- Provide a hosted Help Centre for user-facing setup and troubleshooting.
+- Keep project-memory documentation in `docs/` and user-guide content in
+  `help/`.
 - Preserve the long-term direction toward a dedicated LEGO Builder
   workspace-like Blender UI without implementing it yet.
 - Avoid claiming support for unimplemented LEGO workflows.
@@ -67,6 +71,8 @@ runtime state, Blender operators, and utility helpers.
   download LDraw libraries or manage updates yet.
 - The LEGO Library marker config identifies the library and must not store
   user-specific settings.
+- The sidebar help button opens the hosted Help Centre URL. The extension does
+  not fetch documentation internally.
 
 ## Supported Runtime
 
@@ -86,6 +92,8 @@ runtime state, Blender operators, and utility helpers.
 - No automated test suite exists yet.
 - Blender CLI validation is not available in the current development shell.
 - GitHub publishing requires local authentication outside this environment.
+- GitHub Pages publishing is handled by the Pages workflow after repository
+  configuration is enabled on GitHub.
 
 ## AI Workflow
 
@@ -108,6 +116,8 @@ Then inspect the current worktree before making changes.
   directories, or multiple library locations beyond the LEGO Library foundation.
 - Do not assume v0.5 visual asset browsing, thumbnails, search, or drag-and-drop
   exist.
+- Do not assume the Help Centre describes implemented features unless the
+  current extension actually supports them.
 - Do not assume v0.6 geometry import, mesh generation, material generation, or
   primitive substitution exists.
 - Do not assume a dedicated LEGO Builder Blender workspace or layout exists.

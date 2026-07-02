@@ -7,6 +7,12 @@ and this project follows semantic versioning.
 
 ## [Unreleased]
 
+### Added
+
+- Help Centre foundation using MkDocs Material.
+- GitHub Pages workflow for hosted user documentation.
+- Sidebar help button target for the hosted Help Centre.
+
 ## [0.4.1] - 2026-07-02
 
 ### Added

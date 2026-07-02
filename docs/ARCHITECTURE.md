@@ -12,7 +12,7 @@ For product goals, see [PRODUCT.md](PRODUCT.md). For conceptual data flow, see
 The project is a Blender Extension with a small Blender-facing entry point,
 central registration, add-on preferences, user interface modules, pure library
 validation/index helpers, pure LEGO Library helpers, runtime state, operator
-modules, and small utility modules.
+modules, hosted user documentation, and small utility modules.
 
 The current implementation remains intentionally focused: it supports extension
 registration, a sidebar panel, add-on preferences, basic LDraw path status, a
@@ -29,6 +29,10 @@ dedicated workspace-level LEGO Builder UI. The sidebar remains the quick-control
 surface, while the future workspace-like layout should host the primary building
 experience.
 
+User documentation is an external hosted boundary. The add-on may open the Help
+Centre URL through Blender's URL operator, but it should not fetch, cache, or
+render hosted documentation internally.
+
 ## Module Boundaries
 
 Future modules should keep responsibilities separate:
@@ -41,6 +45,7 @@ Future modules should keep responsibilities separate:
   and marker config compatibility.
 - `runtime`: in-memory session state such as the current workspace, current
   library, and current part index.
+- `help`: hosted user-guide source for GitHub Pages.
 - `utils`: small reusable helpers with no Blender UI ownership.
 - `core`: LEGO building concepts independent of Blender UI.
 - `ldraw`: LDraw library discovery, indexing, parsing, and metadata.
