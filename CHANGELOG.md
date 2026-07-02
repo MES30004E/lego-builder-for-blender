@@ -7,6 +7,8 @@ and this project follows semantic versioning.
 
 ## [Unreleased]
 
+## [0.4.2] - 2026-07-02
+
 ### Added
 
 - Help Centre foundation using MkDocs Material.

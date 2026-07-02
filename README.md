@@ -11,8 +11,8 @@ animation, and rendering capabilities.
 
 ## Current Status
 
-Version 0.4.1 is a verified LEGO Library management foundation with polished
-setup UX.
+Version 0.4.2 is a verified LEGO Library management foundation with hosted Help
+Centre support.
 
 The extension currently provides a Blender sidebar panel, add-on preferences,
 LEGO Library folder management, LDraw library path validation, and an in-memory

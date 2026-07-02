@@ -5,9 +5,10 @@ describes the current state of LEGO Builder for Blender.
 
 ## Current Project Status
 
-Version 0.4.1 is complete. The extension installs and loads in Blender 5.1.2
+Version 0.4.2 is complete. The extension installs and loads in Blender 5.1.2
 with modular registration, add-on preferences, LEGO Library management, LDraw
-path validation, and an in-memory LDraw part metadata index.
+path validation, an in-memory LDraw part metadata index, and hosted Help Centre
+support.
 
 Geometry import, caching, search, thumbnails, materials, snapping, and export
 are still not implemented.
