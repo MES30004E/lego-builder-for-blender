@@ -5,7 +5,9 @@ This is a capability-based roadmap. It is not a detailed implementation plan.
 ## Current Roadmap Status
 
 `v0.1.0` established the extension skeleton. `v0.2.0` added architecture and
-preferences. `v0.3.0` added the pure LDraw library index foundation.
+preferences. `v0.3.0` added the pure LDraw library index foundation. The
+long-term UX goal is a dedicated LEGO Builder workspace-like environment inside
+Blender, with the sidebar preserved for quick controls and status.
 
 ## Foundation
 
@@ -30,18 +32,29 @@ Expected milestone: `v0.2` to `v0.3`
 
 Expected milestone: `v0.4`
 
-- Let users select where LEGO Builder stores library data.
+- Let users select a LEGO Library folder for managed data.
 - Automatically create the required folder structure.
+- Add a durable LEGO Library folder.
+- Store a LEGO Library marker config.
+- Let users point the LDraw library path at the LEGO Library `ldraw/` folder.
+- Centralize current workspace, library, and index in in-memory runtime state.
+
+Future library-management work:
+
 - Download the official LDraw library from official sources.
 - Verify downloaded library integrity.
 - Detect missing or corrupted libraries.
 - Update an existing library.
 - Support multiple library locations.
-- Provide a library manager UI.
+- Support additional external/custom LDraw directories without copying them into
+  the main LEGO Library.
+- Provide a fuller library manager UI.
 - Show library size and statistics.
+- Add a future update checker using GitHub Releases.
+- Optionally notify users when updates are available.
+- Provide download/update flows only if Blender extension constraints allow it.
 
-This is not implemented in `v0.3.0`. Manual creation of `parts/` and `p/`
-folders should eventually no longer be required.
+Manual LDraw library download/setup is not implemented in `v0.4.0`.
 
 ## Part Browser
 
@@ -59,8 +72,20 @@ Expected milestone: `v0.5`
 - Prepare for background thumbnail generation, background indexing, incremental
   refresh, and optional thumbnail caching.
 
-This is not implemented in `v0.3.0`; no asset browser UI, thumbnails, rendering,
+This is not implemented in `v0.4.0`; no asset browser UI, thumbnails, rendering,
 search, or import controls exist yet.
+
+## Dedicated Building Workspace
+
+Expected milestone: future.
+
+- Provide a focused LEGO Builder workspace-like layout inside Blender.
+- Keep the sidebar available for quick status and controls.
+- Support part browsing, snapping, collision feedback, build tools, color and
+  material controls, and object inspection.
+
+This is product direction only. Custom Blender workspaces and layout changes are
+not implemented in `v0.4.0`.
 
 ## Geometry Import
 
@@ -76,7 +101,7 @@ Expected milestone: `v0.6`
 - Provide import options.
 - Prioritize performance optimization.
 
-This is not implemented in `v0.3.0`; the current part index is metadata only.
+This is not implemented in `v0.4.0`; the current part index is metadata only.
 
 ## Search and Filtering
 
@@ -88,7 +113,7 @@ Expected milestone: `v0.5`
 
 ## Materials
 
-Expected milestone: `v0.4`
+Expected milestone: future.
 
 - Map LEGO colors to Blender materials.
 - Keep material handling reusable.

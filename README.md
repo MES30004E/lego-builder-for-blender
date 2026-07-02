@@ -11,13 +11,14 @@ animation, and rendering capabilities.
 
 ## Current Status
 
-Version 0.3.1 is a verified LDraw library index foundation with preferences UX
-and CI compatibility fixes.
+Version 0.4.1 is a verified LEGO Library management foundation with polished
+setup UX.
 
 The extension currently provides a Blender sidebar panel, add-on preferences,
-basic LDraw library path validation, and an in-memory `.dat` part metadata
-index. LEGO building features such as geometry import, searchable asset
-browsing, snapping, materials, caching, and export are not implemented yet.
+LEGO Library folder management, LDraw library path validation, and an in-memory
+`.dat` part metadata index. LEGO building features such as geometry import,
+searchable asset browsing, snapping, materials, and export are not implemented
+yet.
 
 ## Installation
 

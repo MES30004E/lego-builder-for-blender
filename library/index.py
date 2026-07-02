@@ -6,11 +6,13 @@ from dataclasses import dataclass
 from pathlib import Path
 
 try:
+    from ..runtime import state as runtime_state
     from .metadata import LDrawPartMetadata, extract_part_metadata
     from .validation import validate_ldraw_library_path
 except ImportError:  # Allows local tests to import this module outside Blender.
     from library.metadata import LDrawPartMetadata, extract_part_metadata
     from library.validation import validate_ldraw_library_path
+    from runtime import state as runtime_state
 
 
 @dataclass(frozen=True)
@@ -33,9 +35,6 @@ class LDrawIndexBuildResult:
     is_success: bool
     message: str
     index: LDrawPartIndex | None
-
-
-_current_index: LDrawPartIndex | None = None
 
 
 def build_ldraw_part_index(library_path: str | Path | None) -> LDrawIndexBuildResult:
@@ -67,16 +66,14 @@ def build_ldraw_part_index(library_path: str | Path | None) -> LDrawIndexBuildRe
 
 def set_current_index(index: LDrawPartIndex | None) -> None:
     """Set the active in-memory part index."""
-    global _current_index
-
-    _current_index = index
+    runtime_state.set_current_index(index)
 
 
 def get_current_index() -> LDrawPartIndex | None:
     """Return the active in-memory part index, if one exists."""
-    return _current_index
+    return runtime_state.get_current_index()
 
 
 def clear_current_index() -> None:
     """Clear the active in-memory part index."""
-    set_current_index(None)
+    runtime_state.clear_current_index()

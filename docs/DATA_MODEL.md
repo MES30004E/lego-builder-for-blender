@@ -6,11 +6,15 @@ storage formats, or algorithms.
 ## Conceptual Flow
 
 ```text
+LEGO Library
+    ↓
 LDraw Part
     ↓
 Part Metadata
     ↓
 Part Index
+    ↓
+Runtime State
     ↓
 Cached Blend Asset
     ↓
@@ -26,6 +30,22 @@ Scene
 An LDraw Part is a source definition from an external LDraw-compatible library.
 It is library data, not Blender scene data.
 
+## LEGO Library
+
+A LEGO Library is a user-selected folder managed by LEGO Builder. It provides
+durable locations for the managed LDraw library, cache folders, downloads,
+projects, logs, and future generated data.
+
+## LEGO Library Config
+
+LEGO Library Config is a small marker file inside the LEGO Library. It
+identifies the folder as a LEGO Builder library and helps the add-on recognize
+it after preferences are reset or the extension is reinstalled.
+
+The marker records schema version, application name, workspace version,
+creation version, and creation timestamp. It does not store user-specific
+settings.
+
 ## Part Metadata
 
 Part Metadata is basic catalog information extracted from a `.dat` file, such
@@ -39,6 +59,13 @@ A Part Index is an in-memory collection of Part Metadata records for the
 configured LDraw library.
 
 It is runtime data only in the current milestone and is not written to disk.
+
+## Runtime State
+
+Runtime State is in-memory session state for the active workspace, active
+library, current part index, and future loaded metadata.
+
+It is not persisted in the current milestone.
 
 ## Cached Blend Asset
 
@@ -66,8 +93,11 @@ collections, and user edits.
 ## Ownership and Lifecycle
 
 - LDraw Parts come from an external library.
+- The LEGO Library is durable user-selected project data.
+- LEGO Library Config identifies an initialized LEGO Library.
 - Part Metadata is derived from LDraw Part files.
 - The Part Index is in-memory runtime data.
+- Runtime State resets when Blender reloads the extension.
 - Cached Blend Assets are generated and may be refreshed.
 - Placed Instances belong to a Blender scene.
 - Connector Graph data belongs to building logic.

@@ -55,6 +55,22 @@ A conceptual connection point or relationship used by snapping and build logic.
 
 An external collection of part definitions, such as an LDraw-compatible library.
 
+### LEGO Library
+
+The user-facing managed folder where LEGO Builder stores LDraw data, caches,
+downloads, projects, logs, and marker metadata.
+
+### Workspace
+
+An internal implementation term currently used by some Python modules for LEGO
+Library storage helpers. In user-facing text, prefer LEGO Library unless
+discussing Blender workspace layouts.
+
+### Brick Builder
+
+A possible future name for the dedicated LEGO modelling environment inside
+Blender. It is not implemented yet.
+
 ### Build Session
 
 The user's active modeling context while creating or editing LEGO structures.

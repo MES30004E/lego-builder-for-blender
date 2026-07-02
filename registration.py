@@ -5,7 +5,16 @@ from __future__ import annotations
 import bpy
 
 from .operators.index_library import LEGO_BUILDER_OT_build_part_index
-from .operators.preferences import LEGO_BUILDER_OT_open_preferences
+from .operators.preferences import (
+    LEGO_BUILDER_OT_open_documentation,
+    LEGO_BUILDER_OT_open_github,
+    LEGO_BUILDER_OT_open_preferences,
+)
+from .operators.workspace import (
+    LEGO_BUILDER_OT_create_workspace_folders,
+    LEGO_BUILDER_OT_open_workspace_folder,
+    LEGO_BUILDER_OT_use_workspace_ldraw_library,
+)
 from .preferences import LEGOBuilderPreferences
 from .ui.panels import LEGO_BUILDER_PT_main_panel
 
@@ -13,6 +22,11 @@ CLASSES = (
     LEGOBuilderPreferences,
     LEGO_BUILDER_OT_build_part_index,
     LEGO_BUILDER_OT_open_preferences,
+    LEGO_BUILDER_OT_open_documentation,
+    LEGO_BUILDER_OT_open_github,
+    LEGO_BUILDER_OT_create_workspace_folders,
+    LEGO_BUILDER_OT_open_workspace_folder,
+    LEGO_BUILDER_OT_use_workspace_ldraw_library,
     LEGO_BUILDER_PT_main_panel,
 )
 

@@ -7,6 +7,18 @@ and this project follows semantic versioning.
 
 ## [Unreleased]
 
+## [0.4.1] - 2026-07-02
+
+### Added
+
+- v0.4.0 workspace foundation with workspace path preference, folder creation,
+  workspace LDraw path selection, and sidebar workspace status.
+- Runtime state module for current workspace, library, and in-memory part index.
+- Product documentation for the future dedicated LEGO Builder workspace-like
+  Blender experience.
+- v0.4.1 LEGO Library UX polish with clearer setup naming, marker compatibility,
+  compact help links, and future additional-directory/update-roadmap notes.
+
 ## [0.3.1] - 2026-07-02
 
 ### Added
